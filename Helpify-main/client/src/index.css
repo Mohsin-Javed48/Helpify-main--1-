@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/** @format */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.img {
+  height: 100vh;
+}
+
+.b {
+  border: 1px solid black;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  overflow-x: hidden;
+  font-family: "Wix Madefor Display", serif;
+  font-optical-sizing: auto;
+}
+
+.popupAnimate {
+  animation: popup 1.4s infinite ease-in-out;
+}
+@keyframes popup {
+  0%,
+  100% {
+    transform: height;
+  }
+  50% {
+    transform: scaleY(1.2);
+  }
+}
